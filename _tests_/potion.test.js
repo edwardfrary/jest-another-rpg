@@ -1,13 +1,12 @@
 const { TestWatcher } = require('jest');
 const Potion = require('../lib/Potion.js');
-jest.mock('../lib/Potion');
-
-console.log(new Potion());
+// jest.mock('../lib/Potion');
 
 test('creates a health potion object', () => {
     const potion = new Potion('health');
     expect(potion.name).toBe('health');
     expect(potion.value).toEqual(expect.any(Number));
+
 });
 
 test ('creates a random potion object', () => {
@@ -15,5 +14,6 @@ test ('creates a random potion object', () => {
 
     expect(potion.name).toEqual(expect.any(String));
     expect(potion.name.length).toBeGreaterThan(0);
-    expect(potion.value).toEqual(expect.any(Number));
+    expect(potion.value).toEqual(expect.any(Number)); 
+       console.log(potion);
 });
