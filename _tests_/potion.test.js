@@ -1,6 +1,6 @@
 const { TestWatcher } = require('jest');
 const Potion = require('../lib/Potion.js');
-// jest.mock('../lib/Potion');
+jest.mock('../lib/Potion');
 
 test('creates a health potion object', () => {
     const potion = new Potion('health');
