@@ -18,5 +18,8 @@
   "homepage": "https://github.com/edwardfrary/jest-another-rpg#readme",
   "devDependencies": {
     "jest": "^27.0.4"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
